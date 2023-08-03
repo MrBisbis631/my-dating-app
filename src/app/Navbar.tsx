@@ -1,38 +1,10 @@
 import { getServerSession } from '@/lib/auth/authorization';
 import React from 'react'
 import Image from 'next/image';
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import SignOut from '@/components/SignOut';
-
-
-const adminRoutes = {
-  "Dashboard": "/dashboard",
-  "Clients": "/clients",
-  "Profile": "/profile",
-}
-
-const mmRoutes = {
-  "Dashboard": "/dashboard",
-  "Clients": "/clients",
-  "Profile": "/profile",
-}
-
-const clientRoutes = {
-  "Dashboard": "/dashboard",
-  "Profile": "/profile",
-  "Questions": "/questions",
-}
+import { adminRoutes, clientRoutes, mmRoutes } from '@/lib/users-paths';
 
 const entries = {
   "ADMIN": adminRoutes,
@@ -40,14 +12,12 @@ const entries = {
   "CLIENT": clientRoutes,
 }
 
-
 async function Navbar() {
   const session = await getServerSession();
 
   if (!session || !session.user) {
     return null
   }
-
 
   return (
     <div className="h-16 z-50 px-3 flex justify-between items-center shadow shadow-gray-300 bg-gray-200">
