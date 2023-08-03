@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-dots {
+  background-size: 10px;
+  background-repeat: repeat;
+}
+
+
+/* Use these custom variables... */
+:root {
+  --polka-bg-image:
+    radial-gradient(rgb(168, 168, 168) 10%, transparent 14%),
+    radial-gradient(rgb(0, 0, 0) 10%, transparent 14%);
+  --polka-bg-position: 8px 8px, 7.2px 8.8px;
+  --polka-bg-size: 5px 5px;
+  --polka-bg-color: rgb(255, 255, 255);
+}
+
+
+/* ...or add this class to an element */
+body {
+  background-image: 
+    radial-gradient(rgba(0, 0, 0, .3) 10%, transparent 14%);
+  background-position: 8px 8px;
+  background-size: 16px 16px;
+  background-color: rgb(255, 255, 255);
+}

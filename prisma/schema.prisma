@@ -1,0 +1,232 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "mysql"
+    // NOTE: When using mysql or sqlserver, uncomment the @db.Text annotations in model Account below
+    // Further reading:
+    // https://next-auth.js.org/adapters/prisma#create-the-prisma-schema
+    // https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference#string
+    url      = env("DATABASE_URL")
+}
+
+// Necessary for Next auth
+model Account {
+    id                String  @id @default(cuid())
+    userId            String
+    type              String
+    provider          String
+    providerAccountId String
+    refresh_token     String? @db.Text
+    access_token      String? @db.Text
+    expires_at        Int?
+    token_type        String?
+    scope             String?
+    id_token          String? @db.Text
+    session_state     String?
+    user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+    @@unique([provider, providerAccountId])
+}
+
+model Session {
+    id           String   @id @default(cuid())
+    sessionToken String   @unique
+    userId       String
+    expires      DateTime
+    user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+    identifier String
+    token      String   @unique
+    expires    DateTime
+
+    @@unique([identifier, token])
+}
+
+enum Role {
+    CLIENT
+    MATCHMAKER
+    ADMIN
+}
+
+model User {
+    id            String    @id @default(cuid())
+    role          Role      @default(CLIENT)
+    isBaned       Boolean   @default(false)
+    bannedReason  String?   @db.Text
+    firstName     String
+    lastName      String
+    email         String    @unique
+    password_hash String
+    emailVerified DateTime?
+    image         String?
+    accounts      Account[]
+    sessions      Session[]
+
+    phoneNumber String
+
+    client     Client?
+    matchmaker Matchmaker?
+    admin      Admin?
+}
+
+enum ClientCategory {
+    MARIED
+    SINGLE
+    DIVORCED
+    BLACKLISTED
+}
+
+enum Gender {
+    MALE
+    FEMALE
+}
+
+model Client {
+    user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+    userId String @unique
+
+    birthday DateTime
+    category ClientCategory
+    gender   Gender
+    aboutMe  String?        @db.Text
+    photoUrl String?
+    isDating Boolean        @default(false)
+
+    reports  Report[]
+    answers  Answer[]
+    matches1 Match[]  @relation("Match_client1")
+    matches2 Match[]  @relation("Match_client2")
+}
+
+model Matchmaker {
+    user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+    userId String @unique
+
+    // matchmaker musst be authorized by an admin
+    adminAuthorizer   Admin?  @relation(fields: [adminAuthorizerId], references: [userId])
+    adminAuthorizerId String?
+
+    matches Match[]
+    reports Report[]
+}
+
+model Admin {
+    user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+    userId String @unique
+
+    authorizedMatchmakers Matchmaker[]
+}
+
+enum QuestionType {
+    PERSONALITY
+    PREFERENCE
+    BIO
+    RELIGION
+    LIFESTYLE
+    BACKGROUND
+    OTHER
+    LOOKINS_FOR
+}
+
+model Question {
+    created_at DateTime @default(now())
+    updated_at DateTime @updatedAt
+
+    id          String       @id @default(cuid())
+    text        String       @db.Text
+    description String?      @db.Text
+    type        QuestionType
+    options     Option[]
+    answers     Answer[]
+}
+
+model Option {
+    id          String   @id @default(cuid())
+    text        String  @db.Text
+    question    Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+    questionId  String
+    description String? @db.Text
+
+    answers Answer[]
+}
+
+model Answer {
+    id         String   @id @default(cuid())
+    created_at DateTime @default(now())
+    text       String? @db.Text
+
+    question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+    questionId String
+
+    option   Option? @relation(fields: [optionId], references: [id], onDelete: Cascade)
+    optionId String?
+
+    user   Client @relation(fields: [userId], references: [userId], onDelete: Cascade)
+    userId String
+}
+
+enum ReportType {
+    INFO
+    IMPORTENT
+    REQUEST
+}
+
+model Report {
+    id         String     @id @default(cuid())
+    created_at DateTime   @default(now())
+    type       ReportType
+    headline   String?
+    text       String?    @db.Text
+    appendAt   DateTime?
+
+    client Client @relation(fields: [userId], references: [userId], onDelete: Cascade)
+    userId String
+
+    matchmaker   Matchmaker @relation(fields: [matchmakerId], references: [userId], onDelete: Cascade)
+    matchmakerId String
+}
+
+enum MatchStatus {
+    PENDING
+    ACCEPTED
+    REJECTED
+}
+
+model Match {
+    id         String      @id @default(cuid())
+    created_at DateTime    @default(now())
+    status     MatchStatus
+
+    startedAt DateTime  @default(now()) @db.DateTime(3)
+    endedAt   DateTime?
+
+    client1   Client @relation(name: "Match_client1", fields: [client1Id], references: [userId], onDelete: Cascade)
+    client1Id String
+
+    client2   Client @relation(name: "Match_client2", fields: [client2Id], references: [userId], onDelete: Cascade)
+    client2Id String
+
+    matchmaker   Matchmaker @relation(fields: [matchmakerId], references: [userId], onDelete: Cascade)
+    matchmakerId String
+
+    diery MatchDiery[]
+}
+
+model MatchDiery {
+    id         String    @id @default(cuid())
+    created_at DateTime  @default(now())
+    headline   String
+    text       String @db.Text
+    appendAt   DateTime?
+    place      String?
+
+    match   Match  @relation(fields: [matchId], references: [id], onDelete: Cascade)
+    matchId String
+}

@@ -1,0 +1,28 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "dating app",
+      "database": "app",
+      "username": "root"
+    }
+  ],
+  "cSpell.words": [
+    "Adminer",
+    "Avishai",
+    "Datepicker",
+    "hookform",
+    "Signin",
+    "tailwindcss",
+    "tanstack",
+    "Uploadthing"
+  ],
+  "svn.ignoreMissingSvnWarning": true
+}

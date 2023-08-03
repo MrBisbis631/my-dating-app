@@ -1,0 +1,26 @@
+-- AlterTable
+ALTER TABLE `Answer` MODIFY `text` TEXT NULL;
+
+-- AlterTable
+ALTER TABLE `Client` ADD COLUMN `isDating` BOOLEAN NOT NULL DEFAULT false,
+    MODIFY `aboutMe` TEXT NULL;
+
+-- AlterTable
+ALTER TABLE `Match` ADD COLUMN `endedAt` DATETIME(3) NULL,
+    ADD COLUMN `startedAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3);
+
+-- AlterTable
+ALTER TABLE `MatchDiery` ADD COLUMN `place` VARCHAR(191) NULL,
+    MODIFY `text` TEXT NOT NULL;
+
+-- AlterTable
+ALTER TABLE `Option` MODIFY `text` TEXT NOT NULL,
+    MODIFY `description` TEXT NULL;
+
+-- AlterTable
+ALTER TABLE `Question` MODIFY `text` TEXT NOT NULL,
+    MODIFY `description` TEXT NULL,
+    MODIFY `type` ENUM('PERSONALITY', 'PREFERENCE', 'BIO', 'RELIGION', 'LIFESTYLE', 'BACKGROUND', 'OTHER', 'LOOKINS_FOR') NOT NULL;
+
+-- AlterTable
+ALTER TABLE `User` MODIFY `bannedReason` TEXT NULL;

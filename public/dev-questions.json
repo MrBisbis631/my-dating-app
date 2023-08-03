@@ -1,0 +1,430 @@
+[
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What year was the game Team Fortress 2 released?",
+    "correct_answer": "2007",
+    "incorrect_answers": ["2009", "2005", "2010"]
+  },
+  {
+    "category": "Entertainment: Cartoon & Animations",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Who played Stan&#039;s dog in the South Park episode &quot;Big Gay Al&#039;s Big Gay Boat Ride&quot;?",
+    "correct_answer": "George Clooney",
+    "incorrect_answers": ["Jay Leno", "Matt Stone", "Robert Smith"]
+  },
+  {
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In what year did the Wall Street Crash take place?",
+    "correct_answer": "1929",
+    "incorrect_answers": ["1932", "1930", "1925"]
+  },
+  {
+    "category": "Geography",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "There are no roads in/out of Juneau, Alaska.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "category": "Celebrities",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Paul McCartney has always used his middle name. What is his real first name? ",
+    "correct_answer": "James",
+    "incorrect_answers": ["John", "Jack", "Justin"]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "According to a Beatles song, who kept her face in a jar by the door?",
+    "correct_answer": "Eleanor Rigby",
+    "incorrect_answers": ["Loretta Martin", "Molly Jones", "Lady Madonna"]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "The 2010 film &quot;The Social Network&quot; is a biographical drama film about MySpace founder Tom Anderson.",
+    "correct_answer": "False",
+    "incorrect_answers": ["True"]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What genre of EDM is the Dutch DJ, musician, and remixer Armin van Buuren most well-known for?",
+    "correct_answer": "Trance",
+    "incorrect_answers": ["House", "Drum and Bass", "Dubstep"]
+  },
+  {
+    "category": "Mythology",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "This Greek goddess&#039;s name was chosen for the dwarf planet responsible for discord on Pluto&#039;s classification amongst astronomers.",
+    "correct_answer": "Eris",
+    "incorrect_answers": ["Charon", "Ceres", "Dysnomia"]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who is the main character in &quot;The Stanley Parable&quot;?",
+    "correct_answer": "Stanley",
+    "incorrect_answers": ["The Adventure Line", "The Narrator", "The Boss"]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Where did the dog breed &quot;Chihuahua&quot; originate?",
+    "correct_answer": "Mexico",
+    "incorrect_answers": ["France", "Spain", "Russia"]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which of these colours is NOT featured in the logo for Google?",
+    "correct_answer": "Pink",
+    "incorrect_answers": ["Yellow", "Blue", "Green"]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who is the creator of the Super Smash Bros. Series?",
+    "correct_answer": "Masahiro Sakurai",
+    "incorrect_answers": [
+      "Reggie Fils-Aim&eacute;",
+      "Bill Trinen",
+      "Hideo Kojima"
+    ]
+  },
+  {
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "When did the Battle of the Bulge end?",
+    "correct_answer": "January 25, 1945",
+    "incorrect_answers": [
+      "August 6, 1945",
+      "December 7, 1941",
+      "December 16, 1944"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What was Rage Against the Machine&#039;s debut album?",
+    "correct_answer": "Rage Against the Machine",
+    "incorrect_answers": [
+      "Evil Empire",
+      "Bombtrack",
+      "The Battle Of Los Angeles"
+    ]
+  },
+  {
+    "category": "Entertainment: Japanese Anime & Manga",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who is the main character with yellow hair in the anime Naruto?",
+    "correct_answer": "Naruto",
+    "incorrect_answers": ["Ten Ten", "Sasuke", "Kakashi"]
+  },
+  {
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What nationality was sultan Saladin?",
+    "correct_answer": "Kurdish",
+    "incorrect_answers": ["Arab", "Egyptian", "Syrian"]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In the game Battleblock Theater, what was the name of the voice actor who voiced the narrator?",
+    "correct_answer": "Will Stamper",
+    "incorrect_answers": ["Steve Blum", "Richard Epcar", "Yuri Lowenthal"]
+  },
+  {
+    "category": "Animals",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which of these animals is NOT a lizard?",
+    "correct_answer": "Tuatara",
+    "incorrect_answers": ["Komodo Dragon", "Gila Monster", "Green Iguana"]
+  },
+  {
+    "category": "Entertainment: Books",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the name of the three headed dog in Harry Potter and the Sorcerer&#039;s Stone?",
+    "correct_answer": "Fluffy",
+    "incorrect_answers": ["Spike", "Poofy", "Spot"]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In Halo 2, how many rounds does the M6C hold in a single magazine?",
+    "correct_answer": "12",
+    "incorrect_answers": ["6", "36", "18"]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "Sean Connery wasn&#039;t in &quot;Indiana Jones and the Kingdom of the Crystal Skull&quot; because he found retirement too enjoyable.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "In Terraria, you can craft the Cell Phone pre-hardmode.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was Radiohead&#039;s first album?",
+    "correct_answer": "Pablo Honey",
+    "incorrect_answers": ["The Bends", "Kid A", "A Moon Shaped Pool"]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What element on the periodic table has 92 electrons?",
+    "correct_answer": "Uranium",
+    "incorrect_answers": ["Sulfur", "Hydrogen", "Iron"]
+  },
+  {
+    "category": "Animals",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Unlike on most salamanders, this part of a newt is flat?",
+    "correct_answer": "Tail",
+    "incorrect_answers": ["Head", "Teeth", "Feet"]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of these characters was NOT planned to be playable for Super Smash Bros. 64?",
+    "correct_answer": "Peach",
+    "incorrect_answers": ["Bowser", "Mewtwo", "King Dedede"]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "Pistons were added to Minecraft in Beta 1.5.",
+    "correct_answer": "False",
+    "incorrect_answers": ["True"]
+  },
+  {
+    "category": "Geography",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the region conjoining Pakistan, India, and China with unknown leadership called?",
+    "correct_answer": "Kashmir",
+    "incorrect_answers": ["Andorra", "Gibraltar", "Quin"]
+  },
+  {
+    "category": "Entertainment: Japanese Anime & Manga",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "The heroine of &quot;Humanity Has Declined&quot; is a mediator between humans and what?",
+    "correct_answer": "Fairies",
+    "incorrect_answers": ["Elves", "The Earth", "Animals"]
+  },
+  {
+    "category": "Science: Gadgets",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "When did the CD begin to appear on the consumer market?",
+    "correct_answer": "1982",
+    "incorrect_answers": ["1992", "1972", "1962"]
+  },
+  {
+    "category": "Entertainment: Japanese Anime & Manga",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In &quot;A Certain Magical Index,&quot; what is Accelerator able to control?",
+    "correct_answer": "Vectors",
+    "incorrect_answers": ["Velocity", "Quantums", "Wormholes"]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In which location does Dark Sun Gwyndolin reside in &quot;Dark Souls&quot;?",
+    "correct_answer": "Anor Londo",
+    "incorrect_answers": [
+      "Firelink Shrine",
+      "Blighttown",
+      "Kiln of the first flame"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "How much did the indie game &quot;Cave Story&quot; cost when it was first released in 2004?",
+    "correct_answer": "$0 USD",
+    "incorrect_answers": ["$5 USD", "$10 USD", "$15 USD"]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which actress portrayed Dr. Grace Augustine in the James Cameron movie &quot;Avatar&quot;?",
+    "correct_answer": "Sigourney Weaver",
+    "incorrect_answers": [
+      "Jessica Chastain",
+      "Melissa Beckett",
+      "Alyssa Monroe "
+    ]
+  },
+  {
+    "category": "Entertainment: Japanese Anime & Manga",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In 2013, virtual pop-star Hatsune Miku had a sponsorship with which pizza chain?",
+    "correct_answer": "Domino&#039;s",
+    "incorrect_answers": ["Papa John&#039;s", "Pizza Hut", "Sabarro&#039;s"]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which band recorded the album &quot;Parallel Lines&quot;?",
+    "correct_answer": "Blondie",
+    "incorrect_answers": ["Paramore", "Coldplay", "The Police"]
+  },
+  {
+    "category": "Entertainment: Musicals & Theatres",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which Shakespeare play features the stage direction &quot;Enter a messenger, with two heads and a hand&quot;?",
+    "correct_answer": "Titus Andronicus",
+    "incorrect_answers": ["Othello", "Macbeth", "King Lear"]
+  },
+  {
+    "category": "Entertainment: Cartoon & Animations",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What was the name of Jonny&#039;s pet dog in The Adventures of Jonny Quest?",
+    "correct_answer": "Bandit",
+    "incorrect_answers": ["Lucky", "Rocky", "Max"]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What country did Shirley Bassey originate from?",
+    "correct_answer": "Wales",
+    "incorrect_answers": ["America", "England", "Canada"]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": "hard",
+    "question": "In &quot;Minecraft&quot;, gold tools are faster than diamond tools.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the name of the adventurer you meet at the mines in Stardew Valley?",
+    "correct_answer": "Marlon",
+    "incorrect_answers": ["Marnie", "Morris", "Marvin"]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In Night In The Woods, where does Gregg work?",
+    "correct_answer": "Snack Falcon",
+    "incorrect_answers": [
+      "Ol&#039; Pickaxe",
+      "Video Outpost &quot;Too&quot;",
+      "Food Donkey"
+    ]
+  },
+  {
+    "category": "Geography",
+    "type": "boolean",
+    "difficulty": "hard",
+    "question": "Only one country in the world starts with the letter Q.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "category": "Celebrities",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What was James Coburn&#039;s last film role before his death?",
+    "correct_answer": "American Gun",
+    "incorrect_answers": ["Monsters Inc", "Texas Rangers", "Snow Dogs"]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What mainly favored rifle is used by the Terrorists in Counter Strike: Global Offensive?",
+    "correct_answer": "AK-47",
+    "incorrect_answers": ["AK-74", "M4A4", "CZ-75 AUTO"]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "How many obsidian blocks are required to build a nether portal in Minecraft?",
+    "correct_answer": "10",
+    "incorrect_answers": ["14", "13", "16"]
+  },
+  {
+    "category": "Entertainment: Comics",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In the Hellboy universe, who founded the BPRD?",
+    "correct_answer": "Trevor Bruttenholm",
+    "incorrect_answers": ["Kate Corrigan", "Johann Kraus", "Benjamin Daimio"]
+  },
+  {
+    "category": "Animals",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "The freshwater amphibian, the Axolotl, can regrow it&#039;s limbs.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In Pokemon Diamond, Pearl and Platinum, where can a Munchlax be found?",
+    "correct_answer": "Honey Trees",
+    "incorrect_answers": [
+      "Trading with an NPC",
+      "Grass on Route 209",
+      "Wayward Cave"
+    ]
+  }
+]
