@@ -47,9 +47,6 @@ const QuestionsLinks = ({ currentCategory }: { currentCategory: string }) => {
 
 export default async function Question({ params }: QuestionProps) {
   const session = await getServerSession();
-  if (!session || !session.user || session.user.role !== "CLIENT") {
-    return redirect("/sign-in")
-  }
 
   const questions = await prisma.question.findMany({
     where: {
@@ -62,7 +59,7 @@ export default async function Question({ params }: QuestionProps) {
 
   const answers: Answer[] = await prisma.answer.findMany({
     where: {
-      userId: session.user.id,
+      userId: session?.user?.id || "",
       question: {
         type: params.category
       }

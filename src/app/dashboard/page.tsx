@@ -9,13 +9,10 @@ import { Admin, Client, Matchmaker, User } from '@prisma/client';
 
 async function Dashboard() {
   const session = await getServerSession();
-  if (!session?.user || !["ADMIN", "CLIENT", "MATCHMAKER"].includes(session.user.role)) {
-    return redirect("/sign-in")
-  }
 
   const user = await prisma.user.findUnique({
     where: {
-      id: session.user.id
+      id: session?.user?.id
     },
     include: {
       client: true,
