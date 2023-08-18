@@ -2,26 +2,9 @@ import Image from 'next/image'
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/config/nextAuth';
 import { prisma } from '@/services/prismaClient';
-import Navbar from '@/components/Nav/Nav';
 import React, { useEffect, useState } from "react";
-import { UserType } from '@/components/Nav/Nav';
 
 export const revalidate = 60 * 60 * 24 * 7 // 1 week
-function getRole(session: any) {
-  switch (session?.user?.role) {
-    case 'CLIENT':
-      return UserType.Client;
-
-    case 'MATCHMAKER':
-      return UserType.MatchMaker;
-
-    case 'ADMIN':
-      return UserType.Admin;
-
-    default:
-      return UserType.Client;
-  }
-}
 
 export default async function ClientDashboard() {
   const session = await getServerSession();

@@ -21,6 +21,9 @@ export const env = createEnv({
       process.env.VERCEL ? z.string().min(1) : z.string().url()
     ),
     // Add `.min(1) on ID and SECRET if you want to make sure they're not empty
+    APP_BASE_URL: z.string().url().default(
+      process.env.NODE_ENV === "production" ? process.env.VERCEL_URL : `http://localhost:${process.env.PORT || 3000}`
+    )
   },
 
   /**
